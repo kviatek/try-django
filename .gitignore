@@ -1,0 +1,6 @@
+*.pyc
+*~
+__pycache__
+trydjango
+db.sqlite3
+.DS_Store
