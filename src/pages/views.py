@@ -14,7 +14,9 @@ def home_view(request, *args, **kwargs):
 def contact_view(request, *args, **kwargs):
     print(args, kwargs)
     print(request)
-    my_context = {'my_text': 'Contact details can be found below', 'my_title': 'Contact details'}
+    my_context = {'my_text': 'in the future, contact details can be found below',
+                  'my_title': 'Contact details',
+                  'my_html': '<p>A new paragraph</p>'}
     return render(request, 'contact.html', my_context)
 
 

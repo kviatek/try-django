@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ my_title }}{% endblock %}
+{% block title %}{{ my_title|capfirst }}{% endblock %}
 
 {% block content %}
 <h1>Social</h1>
@@ -25,7 +25,9 @@
 
 <ul>
     {% for link in links %}
-    <li><a href=link>Visit our page</a></li>
+    <li>
+        <a href=link></a>{{ link }}
+    </li>
     {% endfor %}
 </ul>
 
