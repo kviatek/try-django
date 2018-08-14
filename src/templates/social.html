@@ -1,2 +1,33 @@
-<h1>Social page</h1>
+{% extends 'base.html' %}
+
+{% block title %}{{ my_title }}{% endblock %}
+
+{% block content %}
+<h1>Social</h1>
 <p>This is a template</p>
+
+<p>
+
+    {{ my_text }}
+
+</p>
+
+<!--tutaj będą linki-->
+
+
+<!--<ul>-->
+
+<!--<li></li>-->
+<!--<li></li>-->
+
+<!--</ul>-->
+
+
+<ul>
+    {% for link in links %}
+    <li><a href=link>Visit our page</a></li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

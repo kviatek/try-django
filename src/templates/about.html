@@ -1,8 +1,15 @@
 {% extends 'base.html' %}
-<h1>About page</h1>
+
+{% block title %}{{ my_title }}{% endblock %}
 
 {% block content %}
-{{ request.user }}
-{% endblock %}
-
+<h1>About</h1>
 <p>This is a template</p>
+
+<p>
+
+    {{ my_text }}
+
+</p>
+
+{% endblock %}
